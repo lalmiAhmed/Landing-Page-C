@@ -1,0 +1,577 @@
+@font-face {
+    font-family: madera;
+    src: url('../fonts/Madera/Madera\ Medium.ttf');
+}
+
+@font-face {
+    font-family: giga;
+    src: url('../fonts/giga-sans-cufonfonts/Locomotype\ \ GigaSansMedium.otf');
+}
+
+@font-face {
+    font-family: giga_bold;
+    src: url('../fonts/giga-sans-cufonfonts/Locomotype\ \ GigaSansBold.otf');
+}
+
+@font-face {
+    font-family: giga_exbold;
+    src: url('../fonts/giga-sans-cufonfonts/Locomotype\ \ GigaSansExtraBold.otf');
+}
+
+body {
+    background-color: #efeefd;
+    font-family: madera;
+
+}
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .wave {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    #nav_container {
+        padding: 1em 2em;
+    }
+
+    #brand {
+        font-family: giga_exbold;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    #nav_bar {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #header {
+        width: 100%;
+        margin: 4em auto;
+        padding-bottom: 1em;
+    }
+
+    #header h1 {
+        font-family: giga_bold;
+        font-size: 26px;
+        margin: 0.5em auto;
+    }
+
+    #header p {
+        font-family: giga;
+        width: 90%;
+        margin: auto;
+    }
+
+    #boxes {
+        margin-bottom: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: stretch;
+    }
+
+    .box {
+        background-color: #ffffff;
+        margin: 1em auto;
+        width: 60%;
+        border-radius: 0.8em;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform .3s;
+    }
+
+    .box:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+        box-shadow: 0px 20px 20px -15px #a3a3c0;
+    }
+
+    .box img {
+        margin: 2em;
+        margin-bottom: 1em;
+        transition: transform .3s;
+    }
+
+    .box button {
+        font-size: 14px;
+        margin: 1em;
+        padding: 0.8em 1em;
+        color: #726b94;
+        background: #ffffff;
+        border: 3px solid #efeefd;
+    }
+
+    .box button:hover {
+        border: 3px solid #764ce7;
+        color: #ffffff;
+        background-color: #764ce7;
+    }
+
+    .box p {
+        font-size: 12px;
+        margin-bottom: 2em;
+        color: #948fae;
+    }
+
+    footer {
+        background-color: #f7f6ff;
+    }
+
+    #footer-container {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box-container {
+        margin: 1em auto;
+        width: 90%;
+    }
+
+    .box-container h6 {
+        font-weight: 500;
+    }
+
+    .box-container p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .copyright {
+        width: 70%;
+        margin: auto;
+        font-size: 12px;
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .wave {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    #nav_container {
+        padding: 1em 2em;
+    }
+
+    #brand {
+        font-family: giga_exbold;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    #nav_bar {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #header {
+        width: 100%;
+        margin: 5em auto 4em auto;
+        padding-bottom: 1em;
+    }
+
+    #header h1 {
+        font-family: giga_bold;
+        font-size: 26px;
+        margin: 0.5em auto;
+    }
+
+    #header p {
+        font-family: giga;
+        width: 90%;
+        margin: auto;
+    }
+
+    #boxes {
+        margin-bottom: 8em;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: stretch;
+    }
+
+    .box {
+        background-color: #ffffff;
+        margin: 1em auto;
+        width: 60%;
+        border-radius: 0.8em;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform .3s;
+    }
+
+    .box:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+        box-shadow: 0px 20px 20px -15px #a3a3c0;
+    }
+
+    .box img {
+        margin: 2em;
+        margin-bottom: 1em;
+        transition: transform .3s;
+    }
+
+    .box button {
+        font-size: 14px;
+        margin: 1em;
+        padding: 0.8em 1em;
+        color: #726b94;
+        background: #ffffff;
+        border: 3px solid #efeefd;
+    }
+
+    .box button:hover {
+        border: 3px solid #764ce7;
+        color: #ffffff;
+        background-color: #764ce7;
+    }
+
+    .box p {
+        font-size: 12px;
+        margin-bottom: 2em;
+        color: #948fae;
+    }
+
+    footer {
+        background-color: #f7f6ff;
+    }
+
+    #footer-container {
+        padding-top: 3em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box-container {
+        margin: 1em 2em;
+        width: 80%;
+    }
+
+    .box-container h6 {
+        font-weight: 600;
+    }
+
+    .box-container p {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .wave {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    #nav_container {
+        margin-top: 1.5em;
+        padding: 1em 2em;
+    }
+
+    #brand {
+        font-family: giga_exbold;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    #nav_bar {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #header {
+        width: 75%;
+        margin: 5em auto 4em auto;
+        padding-bottom: 1em;
+    }
+
+    #header h1 {
+        font-family: giga_bold;
+        font-size: 32px;
+        margin: 0.5em auto;
+    }
+
+    #header p {
+        font-family: giga;
+        width: 75%;
+        margin: auto;
+    }
+
+    #boxes {
+        margin-bottom: 8em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .box {
+        background-color: #ffffff;
+        margin: 1em 0.5em;
+        width: 29%;
+        border-radius: 0.8em;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform .3s;
+    }
+
+    .box:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+        box-shadow: 0px 20px 20px -15px #a3a3c0;
+    }
+
+    .box img {
+        margin: 2em;
+        margin-bottom: 1em;
+        transition: transform .3s;
+    }
+
+    .box button {
+        font-size: 14px;
+        margin: 1em;
+        padding: 0.8em 1em;
+        color: #726b94;
+        background: #ffffff;
+        border: 3px solid #efeefd;
+    }
+
+    .box button:hover {
+        border: 3px solid #764ce7;
+        color: #ffffff;
+        background-color: #764ce7;
+    }
+
+    .box p {
+        font-size: 12px;
+        margin-bottom: 2em;
+        color: #948fae;
+    }
+
+    footer {
+        background-color: #f7f6ff;
+    }
+
+    #footer-container {
+        padding-top: 3em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+    .box-container {
+        margin: 1em 2em;
+        width: 24%;
+    }
+
+    .box-container h6 {
+        font-weight: 600;
+    }
+
+    .box-container p {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+    .wave {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: -1;
+    }
+
+
+    #nav_container {
+        margin-top: 1.5em;
+        padding: 1em 2em;
+    }
+
+    #brand {
+        font-family: giga_exbold;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    #nav_bar {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #nav_item {
+        position: relative;
+    }
+
+    #nav_link:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: -5px;
+        content: "";
+        display: block;
+        height: 3px;
+        border-radius: 4px;
+        left: 50%;
+        position: absolute;
+        background: #764ce7;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    #nav_link:hover:after { 
+        width: 50%; 
+        left: 23%; 
+    }
+
+    #header {
+        width: 75%;
+        margin: 9em auto 2em auto;
+        padding-bottom: 1em;
+    }
+
+    #header h1 {
+        font-family: giga_bold;
+        font-size: 34px;
+        margin: 0.5em auto;
+    }
+
+    #header p {
+        font-family: giga;
+        width: 70%;
+        margin: auto;
+    }
+
+    #boxes {
+        margin-bottom: 10em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .box {
+        background-color: #ffffff;
+        margin: 1em 1.8em;
+        width: 25.5%;
+        border-radius: 0.8em;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform .3s;
+    }
+
+    .box:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+        box-shadow: 0px 20px 20px -15px #a3a3c0;
+    }
+
+    .box img {
+        margin: 2em;
+        margin-bottom: 1em;
+        transition: transform .3s;
+    }
+
+    .box button {
+        margin: 1em;
+        padding: 0.8em 1.4em;
+        color: #726b94;
+        background: #ffffff;
+        border: 3px solid #efeefd;
+    }
+
+    .box button:hover {
+        border: 3px solid #764ce7;
+        color: #ffffff;
+        background-color: #764ce7;
+    }
+
+    .box p {
+        font-size: 12px;
+        margin-bottom: 2em;
+        color: #948fae;
+    }
+
+    footer {
+        background-color: #f7f6ff;
+    }
+
+    #footer-container {
+        padding-top: 3em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+    .box-container {
+        margin: 1em 2em;
+        width: 24%;
+    }
+
+    .box-container h6 {
+        font-weight: 600;
+    }
+
+    .box-container p {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+ }
+ 
+
+
